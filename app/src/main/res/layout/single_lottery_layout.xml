@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_10sdp"
+    app:cardMaxElevation="@dimen/_10sdp"
+    app:cardElevation="@dimen/_10sdp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_margin="@dimen/_8sdp"
+    android:layout_height="@dimen/_80sdp">
+
+
+
+    <RelativeLayout
+        android:background="@drawable/edit_text_custom_shape"
+        android:padding="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/aminmation_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:lottie_autoPlay="true"
+            android:scaleType="centerInside"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/money_rain" />
+
+
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:fontFamily="@font/doppio_one"
+                android:gravity="center"
+                android:text="Tarek"
+                android:id="@+id/text_singleLotName"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/doppio_one"
+                android:gravity="center"
+                android:id="@+id/text_singleLotPhone"
+                android:text="01830089750"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:elevation="@dimen/_100sdp"
+            android:padding="@dimen/_8sdp">
+
+            <TextView
+                android:id="@+id/text_singleLotDate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="5/5/2022"
+                android:textColor="@color/black"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/carview_totterNumber"
+            android:layout_centerInParent="true"
+            app:cardMaxElevation="@dimen/_8sdp"
+            app:cardElevation="@dimen/_8sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            app:cardCornerRadius="@dimen/_5sdp">
+
+            <LinearLayout
+                android:background="@drawable/background"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/doppio_one"
+                    android:text="12345678"
+                    android:padding="@dimen/_6sdp"
+                    android:id="@+id/text_singleLotNumber"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="normal"
+                    />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/textCartPoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_marginEnd="@dimen/_6sdp"
+            android:layout_marginBottom="@dimen/_6sdp"
+            android:fontFamily="@font/doppio_one"
+            android:gravity="center"
+            android:text="Tk.5000"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/choiceColor"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

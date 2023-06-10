@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_10sdp"
+    app:cardMaxElevation="@dimen/_10sdp"
+    app:cardElevation="@dimen/_10sdp"
+    android:layout_margin="@dimen/_8sdp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:padding="@dimen/_10sdp"
+        android:background="@drawable/cart_lottery_desing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:id="@+id/linear_numberShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="center_vertical"
+                app:cardMaxElevation="@dimen/_8sdp"
+                app:cardElevation="@dimen/_8sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                app:cardCornerRadius="@dimen/_8sdp">
+
+                <LinearLayout
+                    android:padding="@dimen/_8sdp"
+                    android:background="@drawable/background"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/doppio_one"
+                        android:text="12345678"
+                        android:id="@+id/text_lotteryOne"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textSize="@dimen/_10sdp"
+                        android:textStyle="normal"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textLotterPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/linear_numberShow"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:fontFamily="@font/doppio_one"
+               android:layout_gravity="center_horizontal"
+                android:text="Tk.5800"
+                android:layout_below="@+id/text_lotteryOne"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/bg_blue"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:alpha="0.3"
+            android:visibility="gone"
+            android:fontFamily="@font/doppio_one"
+            android:gravity="center"
+            android:text="Click Now"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/text_lotteryExpart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear_numberShow"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:fontFamily="@font/doppio_one"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="Ex.6/23/2022 10:20 PM"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="normal" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

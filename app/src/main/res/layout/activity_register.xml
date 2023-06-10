@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegistrationActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_memberFormLoad"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <LinearLayout
+                android:id="@+id/go_back_reg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selectable_backgroung"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:padding="@dimen/_5sdp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:src="@drawable/ic_back_arrow" />
+                <TextView
+                    android:id="@+id/tab_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:text="Toolbar"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="bold"
+
+                    />
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14sp"
+            android:text="REGISTRATION FOR NEW USER"
+            android:textColor="#171616"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/reg_from_Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:cardBackgroundColor="#b0ffffff"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:visibility="gone"
+                            app:cardElevation="@dimen/_10sdp"
+                            app:cardMaxElevation="@dimen/_10sdp"
+                            app:cardCornerRadius="@dimen/_8sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_110sdp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+
+                                    android:id="@+id/imageView_Scanner"
+                                    android:layout_width="@dimen/_250sdp"
+                                    android:layout_height="@dimen/_100sdp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginStart="@dimen/_5sdp"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:layout_marginEnd="@dimen/_5sdp"
+                                    android:layout_marginBottom="@dimen/_5sdp"
+                                    android:alpha="0.1"
+                                    android:paddingBottom="@dimen/_5sdp"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/id_card" />
+
+                                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                    style="@style/AppTheme"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/floating_scanner"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginRight="@dimen/_10sdp"
+                                    android:backgroundTint="@color/white"
+                                    android:src="@drawable/ic_date"
+                                    app:fabSize="mini" />
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/rounded_frame_spinner"
+                            android:visibility="visible">
+
+                            <EditText
+                                android:id="@+id/fullname"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:background="@drawable/rounded_frame_spinner"
+                                android:hint="Full Name"
+                                android:imeOptions="actionPrevious"
+                                android:inputType="text"
+                                android:maxLength="80"
+                                android:maxLines="1"
+                                android:minLines="1"
+                                android:paddingLeft="40dp" />
+
+                            <ImageView
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="2dp"
+                                android:padding="3dp"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/ic_full_name_icon" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/rounded_frame_spinner"
+                            android:visibility="visible">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:background="@drawable/rounded_frame_spinner"
+                                android:hint="NID card Number"
+                                android:imeOptions="actionPrevious"
+                                android:inputType="number"
+                                android:id="@+id/edit_NID"
+                                android:maxLength="80"
+                                android:maxLines="1"
+                                android:minLines="1"
+                                android:paddingLeft="40dp" />
+
+                            <ImageView
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="2dp"
+                                android:padding="3dp"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/ic_full_name_icon" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/rounded_frame_spinner"
+                            android:visibility="visible">
+
+                            <EditText
+                                android:id="@+id/et_register_UserEmail"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:background="@drawable/rounded_frame_spinner"
+                                android:hint="Email"
+                                android:imeOptions="actionNext"
+                                android:inputType="textEmailAddress"
+                                android:maxLines="1"
+                                android:minLines="1"
+                                android:paddingLeft="40dp"
+                                android:textColorHint="#706F6F" />
+
+                            <ImageView
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="2dp"
+                                android:scaleType="center"
+                                android:src="@drawable/ic_email"
+                                app:tint="@color/black" />
+                        </FrameLayout>
+
+                        <FrameLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/rounded_frame_spinner"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/userId"
+                                    android:layout_width="0dp"
+                                    android:layout_height="40dp"
+                                    android:layout_weight="1"
+                                    android:background="#fff"
+                                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+                                    android:hint="User ID"
+                                    android:imeOptions="actionPrevious"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="50"
+                                    android:maxLines="1"
+                                    android:minLines="1"
+                                    android:paddingLeft="40dp" />
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:background="#22552255" />
+
+                                <TextView
+                                    android:id="@+id/check_userId"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:maxLines="2"
+                                    android:minLines="1"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="2dp"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/ic_user_icon"
+                                app:tint="#ffbe6c" />
+                        </FrameLayout>
+
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/rounded_frame_spinner"
+                            android:visibility="visible">
+
+                            <EditText
+                                android:id="@+id/mobile"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:background="@drawable/rounded_frame_spinner"
+                                android:hint="Phone"
+                                android:imeOptions="actionPrevious"
+                                android:inputType="phone"
+                                android:maxLength="20"
+                                android:maxLines="1"
+                                android:minLines="1"
+                                android:paddingLeft="40dp" />
+
+                            <ImageView
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="2dp"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/ic_phone_icon"
+                                app:tint="#2C2A2A" />
+                        </FrameLayout>
+
+                        <!--                        <FrameLayout-->
+                        <!--                            android:layout_width="match_parent"-->
+                        <!--                            android:layout_height="40dp"-->
+                        <!--                            android:layout_marginTop="8dp"-->
+                        <!--                            android:background="@drawable/rounded_frame_spinner"-->
+                        <!--                            android:visibility="gone">-->
+
+                        <!--                            <EditText-->
+                        <!--                                android:id="@+id/joining_code"-->
+                        <!--                                android:layout_width="match_parent"-->
+                        <!--                                android:layout_height="40dp"-->
+                        <!--                                android:background="@drawable/rounded_frame_spinner"-->
+                        <!--                                android:hint="Joining Code"-->
+                        <!--                                android:imeOptions="actionPrevious"-->
+                        <!--                                android:inputType="text"-->
+                        <!--                                android:maxLines="1"-->
+                        <!--                                android:minLines="1"-->
+                        <!--                                android:maxLength="100"-->
+                        <!--                                android:paddingLeft="40dp" />-->
+
+                        <!--                            <ImageView-->
+                        <!--                                android:layout_width="36dp"-->
+                        <!--                                android:layout_height="36dp"-->
+                        <!--                                android:layout_marginLeft="2dp"-->
+                        <!--                                android:layout_marginTop="2dp"-->
+                        <!--                                android:scaleType="centerInside"-->
+                        <!--                                android:src="@drawable/ic_user_icon"-->
+                        <!--                                app:tint="#2C2A2A" />-->
+                        <!--                        </FrameLayout>-->
+
+                        <TextView
+                            android:id="@+id/tv_joining_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="2"
+
+                            android:minLines="1"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:visibility="gone"
+
+                            />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/rounded_frame_spinner"
+                            android:visibility="visible">
+
+                            <EditText
+                                android:id="@+id/sponsor_user_id"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:background="@drawable/rounded_frame_spinner"
+                                android:hint="Sponsor User ID"
+                                android:imeOptions="actionPrevious"
+                                android:inputType="text"
+                                android:maxLength="50"
+                                android:maxLines="1"
+                                android:minLines="1"
+                                android:paddingLeft="40dp" />
+
+                            <ImageView
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="2dp"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/ic_user_icon"
+                                app:tint="#2C2A2A" />
+                        </FrameLayout>
+
+                        <TextView
+                            android:id="@+id/tv_sponsor_user_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="2"
+
+                            android:minLines="1"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:visibility="gone"
+
+                            />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/rounded_frame_spinner"
+                            android:visibility="gone">
+
+                            <EditText
+                                android:id="@+id/placement_user_id"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:background="@drawable/rounded_frame_spinner"
+                                android:hint="Placement User ID"
+                                android:imeOptions="actionPrevious"
+                                android:inputType="text"
+                                android:maxLength="50"
+                                android:maxLines="1"
+                                android:minLines="1"
+                                android:paddingLeft="40dp" />
+
+                            <ImageView
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="2dp"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/ic_user_icon"
+                                app:tint="#2C2A2A" />
+                        </FrameLayout>
+
+                        <TextView
+                            android:id="@+id/tv_placement_user_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="2"
+
+                            android:minLines="1"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/rounded_frame_spinner"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+
+                                android:padding="4dp"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/ic_full_name_icon" />
+
+                            <EditText
+                                android:id="@+id/team_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:background="@drawable/rounded_frame_spinner"
+
+                                android:hint="Team number"
+                                android:imeOptions="actionPrevious"
+                                android:inputType="number"
+                                android:maxLines="1"
+                                android:minLines="1"
+                                android:paddingLeft="40dp"
+                                android:visibility="gone" />
+
+                            <Spinner
+                                android:id="@+id/placement_side_spinner"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="8dp"
+                                android:layout_weight="8"
+
+                                android:entries="@array/placement_slide" />
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:id="@+id/tv_placement_user_team"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="2"
+                            android:minLines="1"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/rounded_frame_spinner"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                           >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:padding="4dp"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/ic_full_name_icon" />
+
+
+
+                            <Spinner
+                                android:id="@+id/package_name_side_spinner"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="8dp"
+                                android:layout_weight="8"
+
+                                android:entries="@array/package_slide" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/rounded_frame_spinner"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+
+                                android:padding="4dp"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/ic_full_name_icon" />
+
+                            <EditText
+                                android:id="@+id/country_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:background="@drawable/rounded_frame_spinner"
+
+                                android:hint="Team number"
+                                android:imeOptions="actionPrevious"
+                                android:inputType="number"
+                                android:maxLines="1"
+                                android:minLines="1"
+                                android:paddingLeft="40dp"
+                                android:visibility="gone" />
+
+                            <Spinner
+                                android:id="@+id/country_side_spinner"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="8dp"
+                                android:layout_weight="8"
+
+                                android:entries="@array/countries_array" />
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:background="@drawable/rounded_frame_spinner">
+
+                            <ImageView
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="2dp"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/ic_password_change"
+                                app:tint="#E53935" />
+
+                            <EditText
+                                android:id="@+id/register_pass"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/_25sdp"
+                                android:background="@color/white"
+                                android:drawablePadding="8dp"
+                                android:ems="10"
+                                android:hint="Enter Your Password"
+                                android:imeOptions="actionDone"
+                                android:inputType="textPassword"
+                                android:maxLength="100"
+                                android:maxLines="1"
+                                android:paddingLeft="8dp"
+                                android:textColor="#494949"
+                                android:textColorHint="#b4acac"
+
+                                />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:background="@drawable/rounded_frame_spinner">
+
+                            <ImageView
+                                android:layout_width="36dp"
+                                android:layout_height="36dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="2dp"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/ic_password_change"
+                                app:tint="#E53935" />
+
+                            <EditText
+                                android:id="@+id/register_c_pass"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/_25sdp"
+                                android:background="@color/white"
+                                android:drawablePadding="8dp"
+                                android:ems="10"
+                                android:hint="Enter Your Confirm Password"
+                                android:imeOptions="actionDone"
+                                android:inputType="textPassword"
+                                android:maxLength="100"
+                                android:maxLines="1"
+                                android:paddingLeft="8dp"
+                                android:textColor="#494949"
+                                android:textColorHint="#b4acac"
+
+                                />
+
+                        </RelativeLayout>
+
+
+                        <Button
+                            android:id="@+id/reg_register_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="@dimen/_20sdp"
+                            android:layout_marginEnd="@dimen/_20sdp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="@dimen/_40sdp"
+                            android:background="@drawable/rounded_button"
+                            android:text="Submit"
+                            android:textAllCaps="false"
+                            android:textColor="#ffffff"
+                            android:textSize="15sp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+
+
+</LinearLayout>

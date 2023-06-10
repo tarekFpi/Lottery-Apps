@@ -1,0 +1,107 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="@dimen/_130sdp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    card_view:cardBackgroundColor="@color/choiceColor"
+    card_view:cardElevation="16dp"
+    card_view:contentPadding="5dp">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/team_image"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_user_male"
+
+            />
+
+<!--        <TextView-->
+<!--            android:id="@+id/team_user_name"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/team_image"-->
+<!--            android:text="Name : "-->
+<!--            android:textColor="@android:color/white"-->
+<!--            android:textSize="@dimen/_12sdp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/team_user_id"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/team_user_name"-->
+<!--            android:text="BID : "-->
+<!--            android:textColor="@android:color/white"-->
+<!--            android:textSize="@dimen/_12sdp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/team_user_ref_id"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/team_user_id"-->
+<!--            android:text="Reference BID : "-->
+<!--            android:textColor="@android:color/white"-->
+<!--            android:textSize="@dimen/_12sdp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/team_user_designation"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/team_user_ref_id"-->
+<!--            android:text="Designation : Member"-->
+<!--            android:textColor="@android:color/white"-->
+<!--            android:textSize="@dimen/_12sdp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/team_team_A"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/team_user_designation"-->
+<!--            android:text="Team-A Carry :6"-->
+<!--            android:textColor="@android:color/white"-->
+<!--            android:textSize="@dimen/_12sdp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/team_team_B"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/team_team_A"-->
+<!--            android:text="Team-B Carry :6"-->
+<!--            android:textColor="@android:color/white"-->
+<!--            android:textSize="@dimen/_12sdp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/team_team_C"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/team_team_B"-->
+<!--            android:text="Team-C Carry :6"-->
+<!--            android:textColor="@android:color/white"-->
+<!--            android:textSize="@dimen/_12sdp"-->
+<!--            android:textStyle="bold" />-->
+
+        <TextView
+            android:id="@+id/team_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/team_image"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_12sdp"
+            android:text="Data not found"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

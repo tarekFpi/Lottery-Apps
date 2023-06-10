@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_4sdp"
+    android:orientation="vertical"
+    android:padding="@dimen/_8sdp"
+    app:cardBackgroundColor="@color/choiceColor"
+    app:cardCornerRadius="@dimen/_8sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/tv_placemetn_list_SL"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/round_button"
+                    android:text="1"
+                    android:textColor="#fff" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="wrap_content"
+                android:background="#85FFFFFF"
+
+                />
+
+            <LinearLayout
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".6"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_60sdp"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/tv_placemetn_list_userID"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_marginBottom="@dimen/_4sdp"
+                        android:layout_weight="1"
+                        android:maxLines="2"
+                        android:minLines="1"
+                        android:text="User ID: \nnasim"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="@dimen/_1sdp"
+                        android:layout_height="match_parent"
+                        android:background="#85FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/tv_placemetn_list_date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_marginBottom="@dimen/_4sdp"
+                        android:layout_weight="1"
+                        android:maxLines="3"
+                        android:minLines="3"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:text="Date: \n1/23/2021 6:19:16 PM"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="#85FFFFFF" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_60sdp"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:weightSum="2"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_placemetn_list_sponsor"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_marginBottom="@dimen/_4sdp"
+                        android:layout_weight="1"
+                        android:maxLines="2"
+                        android:minLines="1"
+                        android:text="Sponsor ID: \nnasim"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="@dimen/_1sdp"
+                        android:layout_height="match_parent"
+                        android:background="#85FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/tv_placemetn_list_designation"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_marginBottom="@dimen/_4sdp"
+                        android:layout_weight="1"
+                        android:maxLines="2"
+                        android:minLines="1"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:text="Designation: \nnull"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+
+
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="@dimen/_40sdp"-->
+<!--                    android:gravity="center"-->
+<!--                    android:visibility="gone"-->
+<!--                    android:paddingLeft="@dimen/_5sdp"-->
+<!--                    android:weightSum="3">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tv_placemetn_list_teamA"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="@dimen/_3sdp"-->
+<!--                        android:layout_marginBottom="@dimen/_4sdp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:maxLines="2"-->
+<!--                        android:minLines="1"-->
+<!--                        android:text="Team A Carry: \n6"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="14sp" />-->
+
+<!--                    <View-->
+<!--                        android:layout_width="@dimen/_1sdp"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:background="#85FFFFFF" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tv_placemetn_list_teamB"-->
+
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="@dimen/_3sdp"-->
+<!--                        android:layout_marginBottom="@dimen/_4sdp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:maxLines="2"-->
+<!--                        android:minLines="1"-->
+<!--                        android:paddingLeft="@dimen/_5sdp"-->
+<!--                        android:text="Team B Carry: \n20"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="14sp" />-->
+
+<!--                    <View-->
+<!--                        android:layout_width="@dimen/_1sdp"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:background="#85FFFFFF" />-->
+
+<!--                    <TextView-->
+
+<!--                        android:id="@+id/tv_placemetn_list_teamC"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="@dimen/_3sdp"-->
+<!--                        android:layout_marginBottom="@dimen/_4sdp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:maxLines="2"-->
+<!--                        android:minLines="1"-->
+<!--                        android:paddingLeft="@dimen/_5sdp"-->
+<!--                        android:text="Team C Carry: \n20"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="14sp" />-->
+
+
+<!--                </LinearLayout>-->
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

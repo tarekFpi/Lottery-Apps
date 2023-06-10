@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/background" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:tint="@color/white"
+        android:layout_centerVertical="true"
+        android:src="@drawable/rbp_world_icon" />
+
+
+    <!--    <Button-->
+    <!--        android:id="@+id/button"-->
+    <!--        android:layout_width="@dimen/_100sdp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:fontFamily="@font/doppio_one"-->
+    <!--        android:onClick="run"-->
+    <!--        android:text="Log in"-->
+    <!--        android:textAllCaps="false"-->
+    <!--        android:background="#2196F3"-->
+    <!--        android:textColor="@color/white"-->
+    <!--        android:textSize="@dimen/_20sdp"-->
+
+    <!--        tools:ignore="OnClick" />-->
+</RelativeLayout>

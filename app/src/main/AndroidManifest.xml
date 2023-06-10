@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.Rbp.world">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:name=".Helpers.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".GiftWithDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TabBalanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LotteryNameActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LotteryGiftActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ScannerViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Add_toCartShowActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPassActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ImageUplodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DailyTaskActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Transfer_Wthdraw_HistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Team.Team2_Sub_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProfileInfoEditActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SearchUserActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MemberReportLoadActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MemberFromLoadActivityActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MemberIncomeLoadActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Team.TeamActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegistrationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LotteryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DashboardActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

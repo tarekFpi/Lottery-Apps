@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "802628355140",
+    "project_id": "rbp-world",
+    "storage_bucket": "rbp-world.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:802628355140:android:4fb14e28d2513e89506811",
+        "android_client_info": {
+          "package_name": "com.Rbp.world"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "802628355140-qv2gurm67sfe7mllc99kcav4rm3kpcp9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.Rbp.world",
+            "certificate_hash": "70cd10f55d559b933a68d4e28437f79841df7834"
+          }
+        },
+        {
+          "client_id": "802628355140-p2pielkphh0lcu4oiho8ffbaqnb7pken.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKQ8EJWLUWammmEtPLiAIe6E9TnFlYoMg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "802628355140-p2pielkphh0lcu4oiho8ffbaqnb7pken.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

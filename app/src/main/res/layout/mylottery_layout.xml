@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_10sdp"
+    app:cardElevation="@dimen/_5sdp"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_margin="@dimen/_5sdp"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardMaxElevation="@dimen/_5sdp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:padding="@dimen/_5sdp"
+        android:background="@drawable/cart_lottery_desing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/aminmation_single"
+            android:layout_width="@dimen/_180sdp"
+            android:layout_height="@dimen/_100sdp"
+            app:lottie_autoPlay="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerInside"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/money_rain" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+          <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+              <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:orientation="vertical"
+                  android:padding="@dimen/_8sdp">
+
+                  <TextView
+                      android:id="@+id/text_MyNumber"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:fontFamily="@font/doppio_one"
+                      android:gravity="center"
+                      android:text="12345678"
+                      android:textAlignment="center"
+                      android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                      android:textColor="@color/bg_blue"
+                      android:textSize="@dimen/_12sdp"
+                      android:textStyle="normal" />
+
+              </LinearLayout>
+
+              <TextView
+                  android:id="@+id/text_Mypoint"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentRight="true"
+                  android:layout_marginLeft="@dimen/_8sdp"
+                  android:layout_marginTop="@dimen/_6sdp"
+                  android:text="Tk:5000"
+                  android:textColor="@color/black"
+                  android:textSize="@dimen/_12sdp"
+                  android:textStyle="normal" />
+          </RelativeLayout>
+
+            <View
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/black_txt"/>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/mylotName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:text="Name:TV"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/text_Mydate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:text="2022-06-30 17:51:51"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+
+            <View
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/black_txt"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textMywinner_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:text="winner amount:30200"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/textMyprize_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:text="prize number:56"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+
+            <View
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/black_txt"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:text="winn status:1"
+                    android:id="@+id/text_myStatus"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

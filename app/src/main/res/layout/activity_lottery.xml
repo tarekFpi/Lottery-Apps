@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LotteryActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_lotterySelect"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <LinearLayout
+               android:id="@+id/go_back_home"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="@drawable/selectable_backgroung"
+               android:clickable="true"
+               android:orientation="horizontal"
+               android:padding="@dimen/_5sdp">
+
+               <TextView
+                   android:id="@+id/tab_text"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="@dimen/_5sdp"
+                   android:layout_marginRight="@dimen/_5sdp"
+                   android:text="Select Lottery"
+                   android:textColor="@android:color/white"
+                   android:textSize="@dimen/_15sdp"
+                   android:textStyle="bold"
+
+                   />
+           </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/linear_Home_addTotalCunt"
+               android:layout_marginRight="10dp"
+               android:layout_alignParentRight="true"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+
+
+               <ImageView
+                   android:layout_marginTop="5dp"
+                   android:layout_alignParentRight="true"
+                   android:layout_width="24dp"
+                   android:layout_height="24dp"
+                   android:layout_centerInParent="true"
+                   android:src="@drawable/ic_baseline_add_shopping_cart_24" />
+
+               <TextView
+                   android:layout_marginLeft="-5dp"
+                   android:id="@+id/text_totalCountCart"
+                   android:layout_width="15dp"
+                   android:layout_height="17dp"
+                   android:gravity="center"
+                    android:textAlignment="center"
+                   android:text="0"
+                   android:background="@drawable/round_button"
+                   android:textSize="12dp"
+                   android:textColor="@color/white"
+                   android:textStyle="normal" />
+
+           </LinearLayout>
+       </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/textLot_Details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appbar"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:background="@drawable/textview_shap"
+        android:elevation="@dimen/_8sdp"
+        android:fontFamily="@font/doppio_one"
+        android:padding="@dimen/_5sdp"
+        android:text="Lottery Name"
+        android:textColor="@color/bg_blue"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="normal" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_below="@+id/textLot_Details"
+        android:id="@+id/swipe_RefreshLayout_lotterySelect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_lotteryShow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textLot_Details"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_8sdp" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/_7sdp"
+        style="@style/AppTheme"
+        android:onClick="ShowCart"
+        app:tint="@android:color/white"
+        android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+        android:backgroundTint="@color/choiceColor"/>
+</RelativeLayout>

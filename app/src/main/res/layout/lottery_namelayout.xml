@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_10sdp"
+    app:cardElevation="@dimen/_5sdp"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_margin="@dimen/_5sdp"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardMaxElevation="@dimen/_5sdp"
+    android:layout_height="@dimen/_100sdp">
+
+    <RelativeLayout
+        android:padding="@dimen/_5sdp"
+        android:background="@drawable/cart_lottery_desing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/imageLottery"
+            android:background="@drawable/cart_lottery_desing"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginEnd="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:elevation="@dimen/_8sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/digital_01" />
+
+       <LinearLayout
+           android:layout_toRightOf="@+id/imageLottery"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+
+
+           <TextView
+               android:id="@+id/text_lotName"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="@dimen/_8sdp"
+               android:layout_marginTop="@dimen/_6sdp"
+               android:text="Name:TV"
+               android:textColor="@color/black"
+               android:textSize="@dimen/_12sdp"
+               android:textStyle="normal" />
+
+
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="@dimen/_8sdp"
+               android:layout_marginTop="@dimen/_6sdp"
+               android:text="status:TV"
+               android:id="@+id/textLot_status"
+               android:textColor="@color/black"
+               android:textSize="@dimen/_12sdp"
+               android:textStyle="normal" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="@dimen/_8sdp"
+               android:text="7-1-2022"
+               android:layout_marginTop="@dimen/_10sdp"
+               android:id="@+id/text_lotDate"
+               android:textColor="@color/black"
+               android:textSize="@dimen/_12sdp" />
+
+       </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

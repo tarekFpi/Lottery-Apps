@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_10sdp"
+    app:cardMaxElevation="@dimen/_10sdp"
+    app:cardElevation="@dimen/_10sdp"
+    android:layout_gravity="center_horizontal"
+    android:layout_margin="@dimen/_8sdp"
+    android:layout_height="wrap_content">
+
+
+
+
+    <RelativeLayout
+        android:background="@drawable/edit_text_custom_shape"
+        android:padding="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floation_removeCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:backgroundTint="@color/white"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:src="@drawable/ic_baseline_close_24"
+            android:theme="@style/AppTheme"
+            app:fabSize="mini"
+            app:tint="@color/black" />
+
+        <!-- <androidx.cardview.widget.CardView
+             android:visibility="gone"
+             android:layout_marginTop="@dimen/_7sdp"
+             android:id="@+id/card_userImage"
+             app:cardMaxElevation="@dimen/_8sdp"
+             app:cardElevation="@dimen/_8sdp"
+             android:layout_width="wrap_content"
+             android:layout_height="@dimen/_45sdp"
+             android:layout_margin="4dp"
+             app:cardCornerRadius="10dp">
+
+             <LinearLayout
+                 android:padding="@dimen/_8sdp"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent">
+
+                 <TextView
+                     android:id="@+id/text_CartshowDate"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:text="5/5/2022"
+                     android:textStyle="normal"
+                     android:gravity="center"
+                     android:textColor="@color/black"/>
+             </LinearLayout>
+
+         </androidx.cardview.widget.CardView>-->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/carview_totterNumber"
+            app:cardMaxElevation="@dimen/_8sdp"
+            app:cardElevation="@dimen/_8sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            app:cardCornerRadius="@dimen/_5sdp">
+
+            <LinearLayout
+                android:background="@drawable/background"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/doppio_one"
+                    android:text="12345678"
+                    android:padding="@dimen/_6sdp"
+                    android:id="@+id/text_cartShow_number"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="normal"
+                    />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/textCartPoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/carview_totterNumber"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="9dp"
+            android:fontFamily="@font/doppio_one"
+            android:gravity="center"
+            android:text="Tk.5000"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/bg_blue"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
