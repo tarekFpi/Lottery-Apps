@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/LotteryClint/RBP-World/app/src/main/res/layout/activity_add_to_cart_show.xml" value="0.24048913043478262" />
+        <entry key="..\:/LotteryClint/RBP-World/app/src/main/res/layout/activity_dashboard.xml" value="0.17708333333333334" />
+        <entry key="..\:/LotteryClint/RBP-World/app/src/main/res/layout/activity_gift_with_details.xml" value="0.21105072463768115" />
+        <entry key="..\:/LotteryClint/RBP-World/app/src/main/res/layout/activity_login.xml" value="0.16799999999999998" />
+        <entry key="..\:/LotteryClint/RBP-World/app/src/main/res/layout/activity_lottery.xml" value="0.24048913043478262" />
+        <entry key="..\:/LotteryClint/RBP-World/app/src/main/res/layout/activity_register.xml" value="0.264" />
+        <entry key="..\:/LotteryClint/RBP-World/app/src/main/res/layout/activity_tab_balance.xml" value="0.22644927536231885" />
+        <entry key="..\:/LotteryClint/RBP-World/app/src/main/res/layout/deshboard_buttom.xml" value="0.22644927536231885" />
+        <entry key="..\:/LotteryClint/RBP-World/app/src/main/res/layout/fragment_process_balance.xml" value="0.12360688956433637" />
+        <entry key="..\:/LotteryClint/RBP-World/app/src/main/res/layout/fragment_profile.xml" value="0.176" />
+        <entry key="..\:/LotteryClint/RBP-World/app/src/main/res/layout/fragment_transaction_pin.xml" value="0.12360688956433637" />
+        <entry key="..\:/LotteryClint/RBP-World/app/src/main/res/layout/fragment_withdraw_balance.xml" value="0.264" />
+        <entry key="..\:/LotteryClint/RBP-World/app/src/main/res/layout/fragment_withdraw_method.xml" value="0.2" />
+        <entry key="..\:/LotteryClint/RBP-World/app/src/main/res/layout/mylottery_layout.xml" value="0.22644927536231885" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_13" default="true" project-jdk-name="13" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
